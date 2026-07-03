@@ -110,7 +110,7 @@ form.addEventListener("submit", (event) => {
     statusLine.textContent = "Код принят";
     window.setTimeout(() => {
       window.location.href = page;
-    }, 350);
+    }, 750);
     return;
   }
 

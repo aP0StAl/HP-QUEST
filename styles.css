@@ -64,14 +64,19 @@ input {
 }
 
 h1 {
-  width: min(100%, 280px);
+  width: min(100%, 260px);
   margin: 0;
   color: var(--ink);
-  font-size: clamp(1.58rem, 7.6vw, 2rem);
+  font-size: clamp(1.48rem, 7vw, 1.88rem);
   font-weight: 700;
   line-height: 1.04;
   text-wrap: balance;
-  text-shadow: 0 1px 0 rgba(255, 248, 222, 0.9), 0 6px 16px rgba(112, 62, 14, 0.18);
+  text-shadow:
+    -1px -1px 0 rgba(255, 248, 222, 0.92),
+    1px -1px 0 rgba(255, 248, 222, 0.92),
+    -1px 1px 0 rgba(255, 248, 222, 0.92),
+    1px 1px 0 rgba(255, 248, 222, 0.92),
+    0 6px 16px rgba(112, 62, 14, 0.18);
 }
 
 .code-grid {
@@ -118,8 +123,7 @@ h1 {
   box-shadow: 0 0 0 3px rgba(215, 47, 68, 0.3), 0 10px 22px rgba(123, 20, 34, 0.2);
 }
 
-.check-button,
-.back-link {
+.check-button {
   min-height: 46px;
   border: 0;
   border-radius: 8px;
@@ -136,8 +140,7 @@ h1 {
   padding: 0 22px;
 }
 
-.check-button:active,
-.back-link:active {
+.check-button:active {
   transform: translateY(1px);
 }
 
@@ -150,12 +153,12 @@ h1 {
 }
 
 .result-panel {
-  overflow: hidden;
+  overflow: visible;
 }
 
 body.result-page .result-shell {
-  place-items: start center;
-  padding-top: clamp(6px, 2svh, 18px);
+  place-items: center;
+  padding-block: clamp(14px, 3svh, 24px);
 }
 
 .result-content {
@@ -169,7 +172,7 @@ body.result-page .result-shell {
 .quest-figure {
   display: grid;
   place-items: center;
-  margin: -18px 0 -18px;
+  margin: 0 0 -18px;
 }
 
 .quest-sticker {
@@ -197,13 +200,6 @@ body.result-page .result-shell {
 
 .quest-text p + p {
   margin-top: 4px;
-}
-
-.back-link {
-  justify-self: start;
-  display: inline-grid;
-  place-items: center;
-  padding: 0 16px;
 }
 
 @media (max-width: 520px) {
