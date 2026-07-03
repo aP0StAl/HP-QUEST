@@ -1,6 +1,6 @@
 const quests = {
   "палочка": "pages/palochka.html",
-  "1234123": "pages/1234123.html",
+  "1223332": "pages/digits.html",
 };
 
 const form = document.querySelector("#code-form");
