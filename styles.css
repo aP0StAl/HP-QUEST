@@ -21,11 +21,11 @@ body {
   margin: 0;
   color: var(--ink);
   font-family: Georgia, "Times New Roman", serif;
-  background: #2c170c url("assets/mobile-background.png") center / cover no-repeat;
+  background: #2c170c url("assets/mobile-background.webp") center / cover no-repeat;
 }
 
 body.result-page {
-  background: #1b1110 url("assets/result-background-floor.png") center / cover no-repeat;
+  background: #1b1110 url("assets/result-background-floor.webp") center / cover no-repeat;
 }
 
 button,
