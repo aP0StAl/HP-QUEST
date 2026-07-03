@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Код заклинания</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="home-page">
+    <main class="entry-shell">
+      <form class="gate-panel" id="code-form" novalidate>
+        <h1>Код <br>заклинания</h1>
+
+        <div class="code-grid" aria-label="Код из семи символов">
+          <input class="code-input" data-code-input maxlength="1" autocomplete="off" autocapitalize="none" spellcheck="false" aria-label="Символ 1">
+          <input class="code-input" data-code-input maxlength="1" autocomplete="off" autocapitalize="none" spellcheck="false" aria-label="Символ 2">
+          <input class="code-input" data-code-input maxlength="1" autocomplete="off" autocapitalize="none" spellcheck="false" aria-label="Символ 3">
+          <input class="code-input" data-code-input maxlength="1" autocomplete="off" autocapitalize="none" spellcheck="false" aria-label="Символ 4">
+          <input class="code-input" data-code-input maxlength="1" autocomplete="off" autocapitalize="none" spellcheck="false" aria-label="Символ 5">
+          <input class="code-input" data-code-input maxlength="1" autocomplete="off" autocapitalize="none" spellcheck="false" aria-label="Символ 6">
+          <input class="code-input" data-code-input maxlength="1" autocomplete="off" autocapitalize="none" spellcheck="false" aria-label="Символ 7">
+        </div>
+
+        <button class="check-button" type="submit">Проверить</button>
+        <p class="status-line" id="status-line" aria-live="polite"></p>
+      </form>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
